@@ -9,6 +9,13 @@ const tools = [
     color: "from-purple-600 to-pink-500",
   },
   {
+    icon: "🎬",
+    title: "Celebrity Success Stories",
+    desc: "Watch real manifestation case studies from Jim Carrey, Oprah, Arnold & more. Learn the exact techniques they used.",
+    href: "/success-stories",
+    color: "from-yellow-500 to-orange-500",
+  },
+  {
     icon: "🔮",
     title: "Affirmation Creator",
     desc: "Generate personalized affirmations powered by AI. Align your thoughts with your desired reality.",
@@ -64,6 +71,7 @@ export default function Home() {
             <Link href="/affirmations" className="hover:text-yellow-400 transition-colors">Affirmations</Link>
             <Link href="/meditations" className="hover:text-yellow-400 transition-colors">Meditations</Link>
             <Link href="/courses" className="hover:text-yellow-400 transition-colors">Courses</Link>
+            <Link href="/success-stories" className="hover:text-yellow-400 transition-colors">Success Stories</Link>
             <Link href="/blog" className="hover:text-yellow-400 transition-colors">Blog</Link>
           </div>
           <div className="flex items-center gap-3">
@@ -128,7 +136,7 @@ export default function Home() {
             <p className="text-gray-400 max-w-xl mx-auto">Everything you need to manifest abundance, love, and success — backed by science and ancient wisdom.</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-5">
             {tools.map((tool) => (
               <Link
                 key={tool.title}
@@ -223,6 +231,7 @@ export default function Home() {
               <div className="font-bold mb-3 text-sm">Learn</div>
               <div className="space-y-2 text-sm text-gray-400">
                 <Link href="/blog" className="block hover:text-yellow-400">Manifestation Blog</Link>
+                <Link href="/success-stories" className="block hover:text-yellow-400">Celebrity Stories</Link>
                 <Link href="/courses" className="block hover:text-yellow-400">All Courses</Link>
                 <Link href="/about" className="block hover:text-yellow-400">About Us</Link>
               </div>
